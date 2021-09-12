@@ -28,5 +28,10 @@ public class Operations {
         linkedlist.insert(56, 30);
         linkedlist.display();
     }
+    public static void popfirstoperation() {
+        LinkedList linkedlist = addoperation();
+        linkedlist.popfirst();
+        linkedlist.display();
+    }
 }
 

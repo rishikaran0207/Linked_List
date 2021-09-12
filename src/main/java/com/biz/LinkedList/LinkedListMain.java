@@ -7,8 +7,8 @@ public class LinkedListMain {
         System.out.print("Enter \n 1 to add element at the start \n " +
                 "2 to append an element " +
                 "\n 3 to insert an element" +
+                " \n 4 to pop an first element" +
                 "\n choice: ");
-
         switch (sc.nextInt()) {
             case 1:
                 Operations.addoperation();
@@ -20,6 +20,9 @@ public class LinkedListMain {
 
             case 3:
                 Operations.insertoperation();
+                break;
+            case 4:
+                Operations.popfirstoperation();
                 break;
         }
     }

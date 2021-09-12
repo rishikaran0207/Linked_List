@@ -40,6 +40,12 @@ public class LinkedList {
         temp.next = newnode;
         newnode.next = tempNode;
     }
+    public Node popfirst() {
+        Node tempNode = head;
+        head = tempNode.next;
+        head.next = tempNode.next.next;
+        return tempNode;
+    }
     public void display(){
         if (head == null) {
             System.out.println("Linked list is Empty");
