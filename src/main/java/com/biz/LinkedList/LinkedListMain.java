@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 public class LinkedListMain {
-    public static int search;
+    public static int search,addnode,afternode;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter \n 1 to add element at the start \n " +
@@ -12,6 +12,7 @@ public class LinkedListMain {
                 " \n 4 to pop an first element" +
                 " \n 5 to pop an last element" +
                 "\n 6 to search an element"+
+                "\n 7 to insert an element after specific node"+
                 "\n choice: ");
         switch (sc.nextInt()) {
             case 1:
@@ -35,6 +36,13 @@ public class LinkedListMain {
                 System.out.print("\n Enter the value to find:");
                 search=sc.nextInt();
                 Operations.searchelement();
+                break;
+            case 7:
+                System.out.print("\n Enter the value to add:");
+                addnode=sc.nextInt();
+                System.out.print("\n Enter the node where to add after that:");
+                afternode=sc.nextInt();
+                Operations.insertatspecificplace();
                 break;
         }
     }

@@ -42,5 +42,12 @@ public class Operations {
         LinkedList linkedList=addoperation();
         linkedList.searchelement(LinkedListMain.search);
     }
+    public static void insertatspecificplace() {
+        LinkedList linkedList = addoperation();
+        System.out.println("\nBefore Inserting");
+        linkedList.insert(LinkedListMain.afternode,LinkedListMain.addnode);
+        linkedList.display();
+        System.out.println("\nAfter inserting");
+    }
 }
 
