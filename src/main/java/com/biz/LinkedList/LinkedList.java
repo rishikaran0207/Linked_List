@@ -54,6 +54,23 @@ public class LinkedList {
         this.tail = tempNode;
         tempNode.next = null;
     }
+    public void searchelement(int value)
+    {
+        Node tempNode=head;
+        int index=1;
+        while(tempNode.data != value)
+        {
+            tempNode = tempNode.next;
+            index++;
+        }
+        if(tempNode.data == value)
+            System.out.println("\nthe searched data is "+value+" and its index is  "+index);
+        else
+            System.out.println("the searched data is not available");
+
+    }
+
+
     public void display(){
         if (head == null) {
             System.out.println("Linked list is Empty");
