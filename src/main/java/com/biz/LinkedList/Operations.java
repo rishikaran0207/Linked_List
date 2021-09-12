@@ -57,5 +57,17 @@ public class Operations {
         linkedList.push(56);
         linkedList.delete(LinkedListMain.deletenode);
     }
+    public static void sortnode(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(40);
+        linkedList.push(30);
+        linkedList.push(56);
+        System.out.println("\n Before Sorting an list:");
+        linkedList.display();
+        linkedList.sort();
+        System.out.println("\n After Sorting an list:");
+        linkedList.display();
+    }
 }
 

@@ -96,7 +96,21 @@ public class LinkedList {
         System.out.println("\nthe size of the list is "+size);
         display();
     }
-
+    public void sort(){
+        Node first=head,second=null;
+        while(first != null) {
+            second=first.next;
+            while (second != null) {
+                if (first.data > second.data) {
+                    int temp = first.data;
+                    first.data = second.data;
+                    second.data = temp;
+                }
+                second = second.next;
+            }
+            first = first.next;
+        }
+    }
 
     public void display(){
         if (head == null) {

@@ -14,6 +14,7 @@ public class LinkedListMain {
                 "\n 6 to search an element"+
                 "\n 7 to insert an element after specific node"+
                 "\n 8 to delete an specific node"+
+                "\n 9 to sort all element in list"+
                 "\n choice: ");
         switch (sc.nextInt()) {
             case 1:
@@ -49,6 +50,9 @@ public class LinkedListMain {
                 System.out.print("\n Enter the value to delete: ");
                 deletenode=sc.nextInt();
                 Operations.deletenode();
+                break;
+            case 9:
+                Operations.sortnode();
                 break;
         }
     }
