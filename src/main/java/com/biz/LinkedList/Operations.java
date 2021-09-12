@@ -12,4 +12,13 @@ public class Operations {
         return linkedlist;
 
     }
+    public static void appendoperation() {
+        LinkedList linkedlist =new LinkedList();
+
+        linkedlist.append(56);
+        linkedlist.append(30);
+        linkedlist.append(70);
+        linkedlist.display();
+    }
 }
+
