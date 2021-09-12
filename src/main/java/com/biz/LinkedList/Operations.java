@@ -20,5 +20,13 @@ public class Operations {
         linkedlist.append(70);
         linkedlist.display();
     }
+    public static void insertoperation() {
+        LinkedList linkedlist = new LinkedList();
+        linkedlist.push(70);
+        linkedlist.push(56);
+        linkedlist.display();
+        linkedlist.insert(56, 30);
+        linkedlist.display();
+    }
 }
 
