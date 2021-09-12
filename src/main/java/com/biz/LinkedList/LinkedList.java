@@ -80,7 +80,10 @@ public class LinkedList {
         while(temp.next.data != delete){
             temp = temp.next;
         }
+        System.out.println("\n Before deleting:");
         System.out.println("\nthe size of the list is "+size);
+        display();
+        System.out.println("\n");
         temp.next = temp.next.next;
         temp.next.next=null;
         temp = head;
@@ -89,7 +92,9 @@ public class LinkedList {
             temp = temp.next;
             size++;
         }
+        System.out.println("\n After deleting:");
         System.out.println("\nthe size of the list is "+size);
+        display();
     }
 
 

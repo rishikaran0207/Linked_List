@@ -49,5 +49,13 @@ public class Operations {
         linkedList.display();
         System.out.println("\nAfter inserting");
     }
+    public static void deletenode(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.push(70);
+        linkedList.push(40);
+        linkedList.push(30);
+        linkedList.push(56);
+        linkedList.delete(LinkedListMain.deletenode);
+    }
 }
 
